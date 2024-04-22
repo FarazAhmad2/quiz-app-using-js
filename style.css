@@ -4,7 +4,8 @@ html {
   width: 100%;
   margin: 1rem 0rem;
   padding: 0;
-  font-family: "Inter", sans-serif; /* Using Inter font */
+  font-family: "Inter", sans-serif;
+  /* Using Inter font */
   background-color: #f0f0f8;
   display: flex;
   justify-content: center;
@@ -43,16 +44,24 @@ html {
 /* Themes for each section */
 .section[data-section="0"] {
   background-color: #ffde59;
-} /* General Knowledge - Yellow */
+}
+
+/* General Knowledge - Yellow */
 .section[data-section="1"] {
   background-color: #ff928b;
-} /* Science - Red */
+}
+
+/* Science - Red */
 .section[data-section="2"] {
   background-color: #8bf6ff;
-} /* Mathematics - Blue */
+}
+
+/* Mathematics - Blue */
 .section[data-section="3"] {
   background-color: #baffc9;
-} /* Indian History - Green */
+}
+
+/* Indian History - Green */
 
 #question-container {
   display: none;
@@ -114,7 +123,7 @@ html {
 }
 
 #feedback:hover {
-  background-color: transparent !important ;
+  background-color: transparent !important;
 }
 
 input[type="text"],
@@ -127,6 +136,7 @@ input[type="number"] {
   border-radius: 5px;
   font-size: 16px;
   font-family: "Inter", sans-serif;
+  display: block;
 }
 
 button.submit-answer {
@@ -142,4 +152,26 @@ button.submit-answer {
 
 button.submit-answer:hover {
   background-color: #218838;
+}
+
+@media screen and (max-width: 576px) {
+  #question-container {
+    margin: 0 1.25rem;
+  }
+
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  
+
+  #question-container {
+    margin: 0 1.25rem;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  
+  #question-container {
+    margin: 0 1.25rem;
+  }
 }
